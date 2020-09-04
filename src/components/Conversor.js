@@ -26,33 +26,42 @@ export default class Conversor extends Component {
             var nomeclatura;
 
             //verifica a moeda para adicionar a nomeclatura
-            if(this.props.moedaB === "BRL"){
-                nomeclatura = "R$ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "GBP"){
-                nomeclatura = "£ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "USD"){
-                nomeclatura = "US$ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "CAD"){
-                nomeclatura = "CA$ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "RUB"){
-                nomeclatura = "₽ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "AUD"){
-                nomeclatura = "AU$ "
-                this.setState({nomeclatura})
-            }
-            if(this.props.moedaB === "EUR"){
-                nomeclatura = "€ "
-                this.setState({nomeclatura})
+            switch(this.props.moedaB){
+                case 'BRL':
+                    nomeclatura = "R$ "
+                    this.setState({nomeclatura})
+                    break;
+                
+                case 'GBP':
+                    nomeclatura = "£ "
+                    this.setState({nomeclatura})
+                    break;
+                
+                case 'USD':
+                    nomeclatura = "US$ "
+                    this.setState({nomeclatura})
+                    break;
+                
+                case 'CAD':
+                    nomeclatura = "CA$ "
+                    this.setState({nomeclatura})
+                    break;
+
+                case 'RUB':
+                    nomeclatura = "₽ "
+                    this.setState({nomeclatura})
+                    break;
+
+                case 'EUR':
+                    nomeclatura = "€ "
+                    this.setState({nomeclatura})
+                    break;
+
+                case 'AUD':
+                    nomeclatura = "AU$ "
+                    this.setState({nomeclatura})
+                    break;
+                
             }
         })
     }
