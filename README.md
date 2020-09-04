@@ -1,6 +1,6 @@
 # CONVERSOR DE MOEDAS
 
-Este é um projeto do Igor Oliveira onde eu adaptei e adicionei algumas melhorias.<br> <br>
+Este é um projeto do Igor Oliveira, feito com React JS, onde eu adaptei e adicionei algumas melhorias.<br> <br>
 algumas adaptações feitas por mim:<br>
 ***Suporte ao Dark Mode;**<br>
 ***Inclusão de nomeclatura para as moedas;**<br>
